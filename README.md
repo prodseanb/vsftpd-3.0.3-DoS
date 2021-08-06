@@ -1,7 +1,10 @@
 # vsftpd-3.0.3-DoS
 vsftpd 3.0.3 Exploit - Remote Denial of Service by [xynmaps](https://www.exploit-db.com/?author=10841)
 
-usage: python3 vsftpd303-dos.py <TARGET> <PORT(DEFAULT:21> <MAX_CONNS(DEFAULT:50)>
+## Usage
+```
+python3 vsftpd303-dos.py <TARGET> <PORT(DEFAULT:21)> <MAX_CONNS(DEFAULT:50)>
+```
 
 ```
 ._________________.
