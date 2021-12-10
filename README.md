@@ -1,5 +1,5 @@
 # vsftpd-3.0.3-DoS
-vsftpd 3.0.3 Exploit - Remote Denial of Service by [xynmaps](https://www.exploit-db.com/?author=10841)
+vsftpd 3.0.3 Exploit - Remote Denial of Service
 
 ## Usage
 ```
